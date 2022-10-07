@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Demonstrator: {% block demo_title %}{% endblock %}</h1>
+
+
+<div id="demo-description">{% block demo_description %}{% endblock %}</div>
+<div id="external-links">{% block external_links %}{% endblock %}</div>
+<div id="demo-content">{% block demo_content %}{% endblock %}</div>
+{% endblock %}

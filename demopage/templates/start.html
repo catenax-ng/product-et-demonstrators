@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">Hello World! Website and project description <br>(Executive Summary)</div>
+<div class="container">
+	<ul class="main_menu">
+		<li><a href="{{url_for('demo_fedml')}}">Federated Machine Learning</a></li>
+		<li><a href="{{url_for('demo_diffpriv')}}">Differential Privacy</a></li>
+		<li><a href="{{url_for('demo_mpc')}}">Multi-Party Computation</a></li>
+	</ul>
+</div>
+{% endblock %}
