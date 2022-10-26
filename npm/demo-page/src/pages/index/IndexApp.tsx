@@ -1,12 +1,12 @@
 
 
-import { CardHorizontal, Navigation, SearchInput, StatusVariants } from 'cx-portal-shared-components';
-import React from 'react';
+import { CardHorizontal, Navigation, PageHeader, SearchInput, StatusVariants, Typography } from 'cx-portal-shared-components';
+import React, { useState, useEffect } from 'react';
 import { ICard, Card } from '../../generic/card/Card';
 
 function getTechnologies(): ICard[] {
   return [
-            {title: 'Example 1', imagePath: '', imageAlt: 'Example image', status: StatusVariants.active, statusText: 'Demostrator ready', label: 'Example 1 - label'},
+            {title: 'Example 1', imagePath: '', imageAlt: 'Example image', status: StatusVariants.active, statusText: 'Demostrator ready', label: 'Example 1 - label', reference: '/demos/a'},
             {title: 'Example 2', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress'},
             {title: 'Example 3', imagePath: '', imageAlt: 'Example image'},
             {title: 'Example 4', imagePath: '', imageAlt: 'Example image'},
@@ -27,6 +27,7 @@ function createCards(info: ICard[]): any[] {
           imageAlt={value.imageAlt}
           status={value.status}
           statusText={value.statusText}
+          reference={value.reference}
           label={value.label}
         ></Card>
       )
@@ -35,37 +36,69 @@ function createCards(info: ICard[]): any[] {
   return cards
 }
 
-export const IndexApp = () => {
 
-  const style = {padding: '30px 20px'}
-  const cardStyle = {marginTop: '20px'}
+class IndexApp extends React.Component{
 
-  let techL: ICard[] = getTechnologies();
+  style: {};
+  style_list: {};
+  style_para: {};
 
-  return (
-    <div style={style}>
+  techL: ICard[] = []
+  techL_copy: ICard[] = []
 
-    <Navigation
-      active="/home"
-      items={[
-        {
-          href: '/home',
-          title: 'home'
-        },
-        {
-          href: '/appstore',
-          title: 'App Store'
-        },
-        {
-          href: '/data-catalog',
-          title: 'Data Catalog'
-        }
-      ]}
-    />
-    <SearchInput />
+  cards: any[] = []
+  
 
-      {createCards(techL)}
-            
-    </div>
-  )
-};
+  constructor(props: any) {
+
+    super(props);
+
+    this.style = {padding: '30px 20px'}
+    this.style_list = {listStyle: "none", padding: 0}
+    this.style_para = {textAlign: 'center', padding: '30px 20px'}
+
+    this.techL = getTechnologies();
+    this.techL_copy = this.techL.map((x) => x)
+
+    this.cards = createCards(this.techL_copy)
+  }
+
+  searchAcction(search: string) {
+
+    this.techL.filter((x) => console.log(x))
+  
+    this.techL_copy = this.techL.filter((x) => x.title.toLowerCase().includes(search.toLowerCase()))
+
+    this.cards = createCards(this.techL_copy)
+    this.render()
+  }
+
+  render() {
+
+    // <SearchInput onChange={e => this.searchAcction(e.target.value)} />
+
+    return (
+
+      <div style={this.style}>
+
+        <Typography variant="h4">Emerging Technologies demonstrator space</Typography>
+        <p style={this.style_para}>
+          Hello World! Website and project description
+          <br />
+          (Executive Summary)
+        </p>
+
+        <ul style={this.style_list}>
+  
+          {this.cards.map((item, i) =>
+            <li key={i}>{item}</li>
+          )}
+
+        </ul>
+
+      </div>
+    )
+  }
+}
+
+export default IndexApp;

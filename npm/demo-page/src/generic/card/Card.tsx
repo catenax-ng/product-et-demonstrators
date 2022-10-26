@@ -7,6 +7,7 @@ export interface ICard {
     imageAlt: string,
     status?: StatusVariants,
     statusText?: string,
+    reference?: string | undefined,
     label?: string,
 }
 
@@ -22,8 +23,10 @@ export const Card = ({
     imageAlt,
     status,
     statusText,
+    reference,
     label = 'Catena-X Emerging Technologies'
 }: ICard) => {
+
 
     return (
   
@@ -34,7 +37,7 @@ export const Card = ({
             imageAlt={imageAlt}
             imagePath={imagePath}
             label={label}
-            onBtnClick={function noRefCheck(){}}
+            onBtnClick={function noRefCheck(){ if (reference) { window.location.href = reference } }}
     
             status={status}
             statusText={statusText}
