@@ -3,14 +3,15 @@
 import { CardHorizontal, Navigation, PageHeader, SearchInput, StatusVariants, Typography } from 'cx-portal-shared-components';
 import React, { useState, useEffect } from 'react';
 import { ICard, Card } from '../../generic/card/Card';
+import { IDemoList, DemoList } from './DemoList';
+import IntroContent from './IntroContent';
+import Introduction from './Introduction';
 
 function getTechnologies(): ICard[] {
   return [
-            {title: 'Example 1', imagePath: '', imageAlt: 'Example image', status: StatusVariants.active, statusText: 'Demostrator ready', label: 'Example 1 - label', reference: '/demos/a'},
-            {title: 'Example 2', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress'},
-            {title: 'Example 3', imagePath: '', imageAlt: 'Example image'},
-            {title: 'Example 4', imagePath: '', imageAlt: 'Example image'},
-            {title: 'Example 5', imagePath: '', imageAlt: 'Example image'},
+            {title: 'Differential Privacy', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', label: 'Example 1 - label', reference: '/demos/differential-privacy'},
+            {title: 'Multi-Party Computation', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/multi-party-computation'},
+            {title: 'Federated Learning', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/federated-learning'},
   ]
 }
 
@@ -40,7 +41,6 @@ function createCards(info: ICard[]): any[] {
 class IndexApp extends React.Component{
 
   style: {};
-  style_list: {};
   style_para: {};
 
   techL: ICard[] = []
@@ -53,8 +53,7 @@ class IndexApp extends React.Component{
 
     super(props);
 
-    this.style = {padding: '30px 20px'}
-    this.style_list = {listStyle: "none", padding: 0}
+    this.style = {padding: '60px 50px'}
     this.style_para = {textAlign: 'center', padding: '30px 20px'}
 
     this.techL = getTechnologies();
@@ -81,20 +80,19 @@ class IndexApp extends React.Component{
 
       <div style={this.style}>
 
-        <Typography variant="h4">Emerging Technologies demonstrator space</Typography>
-        <p style={this.style_para}>
-          Hello World! Website and project description
-          <br />
-          (Executive Summary)
-        </p>
+        <Typography variant="h2">Emerging Technologies Space</Typography>
 
-        <ul style={this.style_list}>
-  
-          {this.cards.map((item, i) =>
-            <li key={i}>{item}</li>
-          )}
+        <Introduction />
 
-        </ul>
+        <div style={{display: "table"}}>
+          <div style={{display: "table-row"}}>
+            <div style={{display: "table-cell", verticalAlign: "top"}}><IntroContent /></div>
+            <div style={{width: "35px", display: "table-cell", verticalAlign: "top"}}></div>
+            <div style={{width: "500px", display: "table-cell", verticalAlign: "top"}}><DemoList cards={this.cards}/></div>
+          </div>
+        </div>
+
+        
 
       </div>
     )

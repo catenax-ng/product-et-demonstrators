@@ -43,3 +43,7 @@ body {
   color: black;
   font-weight: 300;
 }
+
+p {
+  text-align: justify;
+}

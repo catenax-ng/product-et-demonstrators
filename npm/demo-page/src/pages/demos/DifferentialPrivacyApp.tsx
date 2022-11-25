@@ -5,7 +5,7 @@ import IndexLayout from '../layouts/IndexLayout';
 
 
 
-class DemosApp extends React.Component{
+class DifferentialPrivacyApp extends React.Component{
 
     style_cont: {}
     style_desc: {};
@@ -45,6 +45,7 @@ class DemosApp extends React.Component{
 
         <>
             <div style={this.style_cont}>
+                <Typography variant="h2">Differential Privacy</Typography>
                 <div style={this.style_desc}>
                     Exacutive Summary
                     <p>
@@ -72,4 +73,4 @@ class DemosApp extends React.Component{
     }
   }
   
-  export default DemosApp;
+  export default DifferentialPrivacyApp;

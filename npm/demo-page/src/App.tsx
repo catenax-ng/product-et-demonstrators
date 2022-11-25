@@ -5,7 +5,9 @@ import { Button, Alert, MainNavigation, IconButton } from "cx-portal-shared-comp
 import { Box } from '@mui/material';
 import { CxHeader } from './generic/header/CxHeader';
 import IndexApp from './pages/index/IndexApp';
-import DemosApp from './pages/demos/DemosApp';
+import DifferentialPrivacyApp from './pages/demos/DifferentialPrivacyApp';
+import MultiPartyComputationApp from './pages/demos/MultiPartyComputationApp';
+import FederatedLearningApp from './pages/demos/FederatedLearningApp';
 import IndexLayout from './pages/layouts/IndexLayout';
 import DemosLayout from './pages/layouts/DemosLayout';
 import AboutApp from './pages/about/AboutApp';
@@ -24,7 +26,9 @@ function App() {
               <Route path="demos" element={<DemosLayout />} >
 
                 <Route index element={<Navigate to="/" />} />
-                <Route path="a" element={<DemosApp />} />
+                <Route path="differential-privacy" element={<DifferentialPrivacyApp />} />
+                <Route path="multi-party-computation" element={<MultiPartyComputationApp />} />
+                <Route path="federated-learning" element={<FederatedLearningApp />} />
               </Route>
               <Route path="about" element={<AboutApp />} />
             </Route>
