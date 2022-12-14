@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Demos styles */
+
+.Demos-container {
+  overflow: 'auto';
+}
+
+.Demos-description {
+  width: '77%';
+  float: 'left';
+  padding: '20px 30px';
+}
+
+.Demos-links {
+  float: 'right';
+  border: '1px';
+  border-color: '#DCDCDC';
+  border-radius: '20px';
+  border-style: 'solid';
+  width: '22%';
+  height: '100%';
+  padding: '28px';
+}
+
+.Demo-demonstration {
+  border: '1px';
+  border-color: '#DCDCDC';
+  border-radius: '20px';
+  border-style: 'solid';
+  background: 'repeating-linear-gradient(45deg, #F3F3F3, #F3F3F3 3px, #CDCDCD 3px, #CDCDCD 4px)';
+                        
+}
