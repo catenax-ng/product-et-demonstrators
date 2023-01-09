@@ -1,10 +1,14 @@
 # Introduction
 
-As the automotive industry is in a deep stage of transformation. Not only the challenges by high requirements for circular economy but also the new opportunities by big efforts in digitalization demand for safe & secure soltions for data exchange. Furthermore there are political and legal requirements to any data-exchange between different parties in the automotive valuechain.
+Catena-X intends to be nothing less than "the first open and collaborative data ecosystem". To this end the Catena-X architecture is designed to provide the necessary roles, interfaces and processes in order to realize "the first data-driven value chain incorporating all participants and steps". While there is no doubt about the potential benefits, data sovereignty is crucial to make sure that every participant's privacy requirements, intellectual property and legal obligations are considered and protected for the whole lifetime of data and information. Data sharing (somehow include ref to copy problem?) obviously is the easiest part and concepts for access control (ref EDC / BPN / role model etc) or policiy tracking (ref EDC policies) are being developed. However, all of these solutions and processes need to handle the actual data and thus require signicificant data protection efforts. 
 
-To anwser all requirements there is a high need of technologies that could enable the opportunities and increase research & development speed but also ensure that legal and political requirements are fulfilled. 
+The Emergig Technologies Team is located in the Forward-Thinking Organisation of the Catena-X consortia. Funded from the TP 3 AP 7. The objective of the Emerging Technologies Team is to evaluate technologies that allow compute on data or extract information from data without accessing or seeing the actual data. Such concepts can reduce the risks of data breaches or malicious behavior and even enable new use cases that have been deemed categorically impossible due to strict confidentiality requirements. To this end the following key areas / technologies are handled in our team and introduced on this page: 
 
-For this we are doing research on two major topics. On the one hand we are researching Privacy Enhancing Technologies which enable data providers to anonymize & transform data that it could fulfill the requirements. At the other hand we are researching and demonstrating the application of Federated Machine Learning. This methodology allows to train a model for a specific use-case on data without seeing and transfering the data. Using that method enables to train and achieve models based on data of different providers without the risk of data leaks.
+* Privacy Preserving Technologies (PPT/PET)
+* Federated Machine Learning (FML) / Federated Artificial Intelligence (FAI)
+* Multi Party Computation (MPC)
+
+This website contains sections to the privacy risks of a open data ecosystem and how technologies like privacy preserving, federated machine learning and multi party computation could be applied to mitigate such risks. In addition you can find different concepts and rudimental demonstrators which show the application of privacy enhancing technologies.
 
 
 ## Scope and Motivation
