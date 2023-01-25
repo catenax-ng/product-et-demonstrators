@@ -21,11 +21,11 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
         }
 
         this.components = {
-            h1: ({node, ...props}: {node: any}) => <Typography variant="h1" {...props}/>,
-            h2: ({node, ...props}: {node: any}) => <Typography variant="h2" {...props}/>,
-            h3: ({node, ...props}: {node: any}) => <Typography variant="h3" {...props}/>,
-            h4: ({node, ...props}: {node: any}) => <Typography variant="h4" {...props}/>,
-            h5: ({node, ...props}: {node: any}) => <Typography variant="h5" {...props}/>,
+            h1: ({node, ...props}: {node: any}) => <Typography variant="h2" id={this.title_name(props)} {...props}/>,
+            h2: ({node, ...props}: {node: any}) => <Typography variant="h2" id={this.title_name(props)} {...props}/>,
+            h3: ({node, ...props}: {node: any}) => <Typography variant="h3" id={this.title_name(props)} {...props}/>,
+            h4: ({node, ...props}: {node: any}) => <Typography variant="h4" id={this.title_name(props)} {...props}/>,
+            h5: ({node, ...props}: {node: any}) => <Typography variant="h5" id={this.title_name(props)} {...props}/>,
           }
 
         this.getMarkdown()
@@ -42,7 +42,11 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
         )  
     }
 
-
+    // https://github.com/remarkjs/react-markdown/issues/69
+    title_name(props: any) : string {
+        return props.children[0].toLowerCase().replace(/\W/g, '-')
+    }
+    
     render(): React.ReactNode {
         return <ReactMarkdown components={this.components}>{this.state.markdown}</ReactMarkdown>;
     }
