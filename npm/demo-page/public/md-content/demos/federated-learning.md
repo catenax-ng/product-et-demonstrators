@@ -11,7 +11,7 @@ In the original FedAVG implementation by McMahan et al. [1], this model is learn
 3. Every client individually trains the model locally on their own data and stores the resulting update gradients. Hence, after the training process every client owns its individually adapted machine learning model based on their dataset.
 4. The clients send the individually stored update gradients back to the server. The server aggregates the received gradients based on a pre-defined protocol and updates the global model based on these aggregates. Therefore, the server now has a global machine learning model, which was trained on the data of multiple clients while never being able to observe the actual data.
 
-![One Federated Learning Training Iteration](../../images/FedML_Process.pdf)
+![One Federated Learning Training Iteration](../images/FedML_Process.pdf "Federated Learning Training Iteration")
 
 ### Participant Roles
 Data Engineers, Data Scientists, Software Engineers
