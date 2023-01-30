@@ -40,3 +40,6 @@ This section provides an overview of the advantages and drawback of using Federa
 
 ## Technological Readiness Level
 5: The technology is in the transition from research and development to productization.
+
+### References
+\[1\] McMahan, H.B., Moore, E., Ramage, D., Hampson, S., & Arcas, B.A. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. AISTATS.
