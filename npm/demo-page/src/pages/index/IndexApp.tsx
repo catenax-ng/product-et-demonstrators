@@ -9,7 +9,7 @@ import Introduction from './Introduction';
 
 function getTechnologies(): ICard[] {
   return [
-            {title: 'Differential Privacy', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', label: 'Example 1 - label', reference: '/demos/differential-privacy'},
+            {title: 'Differential Privacy', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inReview, statusText: 'In review', reference: '/demos/differential-privacy'},
             {title: 'Multi-Party Computation', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/multi-party-computation'},
             {title: 'Federated Learning', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/federated-learning'},
   ]
