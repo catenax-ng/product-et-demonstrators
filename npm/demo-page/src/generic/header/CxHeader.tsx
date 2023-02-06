@@ -13,6 +13,17 @@ export const CxHeader = () => {
 
   const header_style = {color: 'black'}
 
+
+  /*  -> Header with name
+    <Box >
+      <div style={{position: "absolute"}}>
+        <img src="https://portal.dev.demo.catena-x.net/_storybook/static/media/cx-logo-text.f8e6f8d2eac697fa3bf571b08596729f.svg" style={{display: 'inline-block', height: '40px', width: '170px'}}/>
+        <b style={{position: "relative", left: "22px", top: "-13px", color: "black"}}></b>
+      </div>
+    </Box>
+  */
+
+
   return (<MainNavigation  items={pages}>
 
   <a href="/">

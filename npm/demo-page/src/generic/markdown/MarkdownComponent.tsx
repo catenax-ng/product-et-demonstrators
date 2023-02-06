@@ -21,11 +21,12 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
         }
 
         this.components = {
-            h1: ({node, ...props}: {node: any}) => <Typography variant="h2" id={this.title_name(props)} {...props}/>,
+            h1: ({node, ...props}: {node: any}) => <Typography variant="h1" id={this.title_name(props)} {...props}/>,
             h2: ({node, ...props}: {node: any}) => <Typography variant="h2" id={this.title_name(props)} {...props}/>,
             h3: ({node, ...props}: {node: any}) => <Typography variant="h3" id={this.title_name(props)} {...props}/>,
             h4: ({node, ...props}: {node: any}) => <Typography variant="h4" id={this.title_name(props)} {...props}/>,
             h5: ({node, ...props}: {node: any}) => <Typography variant="h5" id={this.title_name(props)} {...props}/>,
+            p:  ({node, ...props}: {node: any}) => <Typography variant="body1" {...props}/>,
           }
 
         this.getMarkdown()
@@ -48,7 +49,7 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
     }
     
     render(): React.ReactNode {
-        return <ReactMarkdown components={this.components}>{this.state.markdown}</ReactMarkdown>;
+        return <ReactMarkdown components={this.components} className='markdown-style'>{this.state.markdown}</ReactMarkdown>;
     }
 }
 

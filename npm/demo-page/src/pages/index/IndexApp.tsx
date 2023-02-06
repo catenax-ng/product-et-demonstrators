@@ -9,9 +9,9 @@ import Introduction from './Introduction';
 
 function getTechnologies(): ICard[] {
   return [
-            {title: 'Differential Privacy', imagePath: '../md-content/images/dp/differential-privacy-diagram.png', imageAlt: 'Example diagram Differential Privacy', status: StatusVariants.inReview, statusText: 'In review', reference: '/demos/differential-privacy'},
-            {title: 'Multi-Party Computation', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/multi-party-computation'},
-            {title: 'Federated Learning', imagePath: '', imageAlt: 'Example image', status: StatusVariants.inactive, statusText: 'In progress', reference: '/demos/federated-learning'},
+            {title: 'Differential Privacy', imagePath: '../md-content/images/demo_cover/differential-privacy.png', imageAlt: 'Example diagram Differential Privacy', reference: '/demos/differential-privacy'},
+            {title: 'Multi-Party Computation', imagePath: '../md-content/images/demo_cover/multi-party-computation.png', imageAlt: 'Example image', reference: '/demos/multi-party-computation'},
+            {title: 'Federated Learning', imagePath: '../md-content/images/demo_cover/federated-learning.png', imageAlt: 'Example image', reference: '/demos/federated-learning'},
   ]
 }
 

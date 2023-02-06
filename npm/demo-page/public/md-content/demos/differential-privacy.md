@@ -1,13 +1,11 @@
 # Differential Privacy
 
 ## Introduction
-Data is a valuable resource that might contain private information, as a user name, a phone number or a personal identification number. Additionally, it contains some explicit information that can be found by processing the data, like some design solutions. There is a growing concern about protecting the privacy, making it hard to gain any useful information from the data even sharing the data and gaining access to it.
-
 Differential privacy is a set of techniques and mathematical guarantees that provide a strong level of privacy protection for the collected data, even if the information is implicit present in the dataset or not.
 
 This technique allows organizations to collect and use data in a responsible and ethical way, without compromising the privacy of individuals. This concept is widely used in many fields such as healthcare, finance, and social media.
 
- ![Technology behavior diagram](../md-content/images/dp/differential-privacy-diagram.png "Technology behavior diagram")
+![Technology behavior diagram](../md-content/images/dp/differential-privacy-diagram.png "Technology behavior diagram")
 
 ## Technical Information
 Differential privacy involves adding random noise to the data in a controlled manner. There are multiple techniques and methodologies for achieving the privacy that we will explore in this section.

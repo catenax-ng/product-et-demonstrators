@@ -21,13 +21,6 @@ class DifferentialPrivacyApp extends Component <{}, { [key: string]: string }> {
                       <MarkdownComponent contentUrl="/md-content/demos/multi-party-computation.md"></MarkdownComponent>
                   </div>
   
-  
-                  <div className='Demos-links'>
-                      <Typography variant="h6">External links</Typography>
-                      <p>
-                          <a href="google.com">google.com</a>
-                      </p>
-                  </div>
               </div>
   
   
