@@ -3,6 +3,7 @@
 ## Introduction
 Differential privacy is a set of techniques and mathematical guarantees that provide a strong level of privacy protection for the collected data, even if the information is implicit present in the dataset or not.
 
+
 This technique allows organizations to collect and use data in a responsible and ethical way, without compromising the privacy of individuals. This concept is widely used in many fields such as healthcare, finance, and social media.
 
 ![Technology behavior diagram](../md-content/images/dp/differential-privacy-diagram.png "Technology behavior diagram")
@@ -10,10 +11,10 @@ This technique allows organizations to collect and use data in a responsible and
 ## Technical Information
 Differential privacy involves adding random noise to the data in a controlled manner. There are multiple techniques and methodologies for achieving the privacy that we will explore in this section.
 
-1. Global differential privacy
+1. **Global differential privacy**
 
    Provides privacy guarantees for aggregate information in a database, by applying mechanisms globally to the entire set.
-2. Local Differential Privacy
+2. **Local Differential Privacy**
 
    Local differential privacy (LDP) provides privacy guarantees for individual data items in a database. Privacy-preserving mechanisms are applied locally to each data item, rather than globally to the entire dataset.
 
@@ -33,25 +34,33 @@ Differential Privacy is widely applicable and has also been presented to obfusca
 
 
 ### Participant Roles
-*Computer Scientist, Data analysis engineer*
+*Data Provider*, *Data Consumer* and *Data Subject*.
 
 ### Building Blocks
-Library or software to apply techniques to the information to share.
+The *data provider* configure and control the tool for the automatic application of techniques to the incoming data requests and the actual query result. 
+
 
 ## Evaluation
 In this section we will be comparing the performance of Differential Privacy solutions in protecting the data while still allowing for useful data analysis.
 
 ### Advantages
-1.	Privacy protection: Differential privacy provides a strong guarantee of privacy keeping data anonymized.
-2.	Transparency: Differential privacy allows for the release of data without revealing sensitive information about individuals.
-3.	Flexibility: Differential privacy can be applied to a wide variety of data types and use cases.
-4.	Comparability: Differential privacy allows for the comparison of data from different sources without compromising privacy.
+1.	**Privacy protection**: Differential privacy provides a strong guarantee of privacy keeping data anonymized.
+2.	**Transparency**: Differential privacy allows for the release of data without revealing sensitive information about individuals.
+3.	**Flexibility**: Differential privacy can be applied to a wide variety of data types and use cases.
+4.	**Comparability**: Differential privacy allows for the comparison of data from different sources without compromising privacy.
 5.	It allows the owners of the data to control the trade-off between privacy and utility of it.
 
 ### Drawbacks
-1.	High computational cost: Differential privacy algorithms can be computationally expensive, which can make them impractical for large datasets.
-2.	High noise: Differential privacy algorithms is based on adding noise to the data, which can make it difficult to obtain accurate results.
-3.	Limited applicability: Differential privacy may not be suitable for all types of data or use cases, and its effectiveness can depend on the specific characteristics of the data and the specific algorithm used.
+1.	**High computational cost**: Differential privacy algorithms can be computationally expensive, which can make them impractical for large datasets.
+2.	**High noise**: Differential privacy algorithms is based on adding noise to the data, which can make it difficult to obtain accurate results.
+3.	**Limited applicability**: Differential privacy may not be suitable for all types of data or use cases, and its effectiveness can depend on the specific characteristics of the data and the specific algorithm used.
 
 ## Technological Readiness Level
 5: differential privacy is still an emerging field, and there is ongoing research and development in this area. In some applications, there are strict regulations and privacy laws that require the use of it. 
+
+## Example
+There is a growing concern about protecting the data of the users. Thus, companies are using Differential Privacy *(DP)* technologies to recollect logging and metadata information from their users. The process is as follows:
+
+1. Data is recollected.
+2. DP algorithm, for example, average noise is applied to the data.
+3. The data is sent to the company in an anonymously way. 
