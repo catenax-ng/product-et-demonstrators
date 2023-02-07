@@ -27,6 +27,7 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
             h4: ({node, ...props}: {node: any}) => <Typography variant="h4" id={this.title_name(props)} {...props}/>,
             h5: ({node, ...props}: {node: any}) => <Typography variant="h5" id={this.title_name(props)} {...props}/>,
             p:  ({node, ...props}: {node: any}) => <Typography variant="body1" {...props}/>,
+            li: ({node, ...props}: {node: any}) => <li><Typography variant="body2" {...props}/></li>,
           }
 
         this.getMarkdown()

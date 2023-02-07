@@ -38,6 +38,14 @@
 }
 
 
+.container {
+  margin: 145px auto;
+  margin-top: 100px;
+  width: 77%;
+  max-width: 1300px;
+  padding: '60px 50px'; 
+}
+
 /* Demos styles */
 
 .Demos-container {

@@ -15,7 +15,7 @@ class DifferentialPrivacyApp extends Component <{}, { [key: string]: string }> {
     
         return (<>
   
-              <div className='Demos-container'>
+              <div className='container'>
   
                   <div className='Demos-description'>
                       <MarkdownComponent contentUrl="/md-content/demos/federated-learning.md"></MarkdownComponent>

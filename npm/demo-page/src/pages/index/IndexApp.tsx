@@ -78,7 +78,7 @@ class IndexApp extends React.Component{
 
     return (
 
-      <div style={this.style}>
+      <div className='container'>
 
         <Typography variant="h2">Emerging Technologies Space</Typography>
 

@@ -9,7 +9,8 @@ import { Navigate } from "react-router-dom";
 export const CxHeader = () => {
 
   const pages = [ { href: '/', title: 'Home' },
-                  { href: 'https://www.google.com/', title: 'White paper' } ]
+                   ]
+                   // { href: 'https://www.google.com/', title: 'White paper' }
 
   const header_style = {color: 'black'}
 

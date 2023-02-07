@@ -1,6 +1,7 @@
 
 import { Typography } from 'cx-portal-shared-components';
 import React from 'react';
+import MarkdownComponent from '../../generic/markdown/MarkdownComponent';
 
 class AboutApp extends React.Component{
   
@@ -13,16 +14,10 @@ class AboutApp extends React.Component{
     render() {
   
       return (
-  
-        <>
-            <Typography variant="h4">Emerging Technologies demonstrator space</Typography>
-            <p>
-            Hello World! Website and project description
-            <br />
-            (Executive Summary)
-            </p>
-  
-        </>
+        
+        <div className='container'>
+          <MarkdownComponent contentUrl="/md-content/about.md"></MarkdownComponent>
+        </div>
       )
     }
   }
