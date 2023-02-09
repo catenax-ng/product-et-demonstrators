@@ -18,6 +18,17 @@ To modify the HTML files and content go to `npm\demo-page\src\pages\demos\`. For
 The CSS or styles can be found in the file `npm\demo-page\src\App.css`.
 
 
+### Contact card
+To add a contact in the website using Markdown use the following structure:
+```
+
+```contact_card
+../md-content/images/<picturure_path>
+<Name of contributor>
+<mail@catena.net>
+```
+
+```
 
 ## NPM Installation
 

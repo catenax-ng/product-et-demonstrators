@@ -28,6 +28,9 @@ Differential privacy involves adding random noise to the data in a controlled ma
     Pr[M(D) in S] ≤ e^ε x Pr[M(D') in S] + δ
     ```
     with `ε` as the likeliness of finding individuals and δ as the possibility, by which outputs differ for different datasets.
+
+    Tuning the mentioned parameters different result can be achieved. Adding less or more noise will influence how complex it is to reconstruct the values, although it can also make it difficult to interpret them for data processing
+
 Hence through differential privacy, an adversary will essentially get the same inference about any individual's private information, which makes the outputs "differentially" indistinguishable. This promise is mostly achieved by adding noise randomly sampled from a probability density function.
 
 Differential Privacy is widely applicable and has also been presented to obfuscate the resulting update gradients of training deep neural networks. This extension to traditional neural networks is one possibility to counteract reverse-engineering of training data. Adding noise to data or updating gradients lowers the degree of information and therefore the utility. However, the amount of noise can be easily customized, which shifts the privacy-utility trade-off. Due to the easy adaptability and broad applicability, we expect DP to be a valuable technique for our project.

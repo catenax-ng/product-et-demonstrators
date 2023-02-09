@@ -77,3 +77,26 @@
   background: 'repeating-linear-gradient(45deg, #F3F3F3, #F3F3F3 3px, #CDCDCD 3px, #CDCDCD 4px)';
                         
 }
+
+.image-layout {
+  text-align: center;
+}
+
+
+.contact-card {
+
+}
+
+.contact-card img {
+  margin: 0;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-card a {
+  text-decoration: none;
+}

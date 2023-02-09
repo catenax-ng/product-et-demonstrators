@@ -2,6 +2,8 @@
 import { Typography } from 'cx-portal-shared-components';
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import CodeComponent from './code';
+import ImageComponent from './image';
 
 
 
@@ -28,6 +30,8 @@ class MarkdownComponent extends Component <{contentUrl: string}, { [key: string]
             h5: ({node, ...props}: {node: any}) => <Typography variant="h5" id={this.title_name(props)} {...props}/>,
             p:  ({node, ...props}: {node: any}) => <Typography variant="body1" {...props}/>,
             li: ({node, ...props}: {node: any}) => <li><Typography variant="body2" {...props}/></li>,
+            img: ({node, src, alt, title, ...props}: {node: any, src: any, alt: any, title: any}) => <ImageComponent src={src} alt={alt} title={title} />,
+            code: ({node, inline, className, ...props}: {node: any, inline: any, className: any}) => <CodeComponent inline={inline} className={className} {...props} />,
           }
 
         this.getMarkdown()
