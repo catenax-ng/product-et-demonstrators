@@ -17,12 +17,6 @@ In practice data is rarely atomic and comprising only a single piece of informat
 ### The (Recursive) Enforcement Problem
 
 Following the Gaia-X principles for data sharing in and between International Data Spaces, a key component is a dataspace connector, whose main role is that of negotiating the terms of a contract between the data producer and the data consumer and making the data available. However, the connector lacks any capability to technically enforce the policies described in the contract (note that guaranteed technical enforcement of policies is not possible due to the above copy problem). As a result, a data consumer might be liable in case of breaking the terms in the agreement but proving the mishandling of the data could be very difficult if not impossible. When such a situation occurs, unintended information about business internals can be revealed with PII illegally disclosed and/or misused or IP being leaked. In some other cases, even useful and well intended cooperation might unintentionally violate anti-trust laws. The current approach tries to mitigate this risk with legal contracts that every participant is required to accept and sign if they wish to share and receive data. 
-<!-- todo: elaborate on the recursiveness -->
-
-<!-- exclude because we don't offer solutions to the mentioned problems
-While these risks are a result of data simply being shared, a new category of risks appears when the data consumer and producer agree to train machine learning models on existing data, allow to query a model for inference or share the complete trained models.
-
-In the first case, the current architecture design does not foresees any mechanism to prevent an algorithm from running malicious computations and, unfortunately, only the auditing, vetting and signing of the code can help addressing this issue. Moreover, certain attacks are possible when a machine learning model is made available for inference, even if data is not accessible. For example, a malicious data consumer could perform a membership inference attack to determine if a particular individual is part of the dataset used to train the model. Furthermore, a model can be made available only for inference according to a contract. However, there exist techniques that would allow a data consumer to steal that model, incurring again in potential IP losses for the data provider. -->
 
 
 ## Privacy Tradeoff
