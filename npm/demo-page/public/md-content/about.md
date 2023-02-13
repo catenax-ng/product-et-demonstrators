@@ -8,13 +8,13 @@ david.noack@catena-x.net
 ```
 
 ```contact_card
-../md-content/images/contact-icons/jorge_munnoz.jpg
+../md-content/images/contact-icons/jorge_munnoz.jpeg
 Jorge Muñoz Aguado
 jorge.munozaguado@dlr.de
 ```
 
 ```contact_card
-../md-content/images/contact-icons/robin_taba.jpg
+../md-content/images/contact-icons/Robin_Taba.jpg
 Robin Taba
 robin.taba@dlr.de
 ```
