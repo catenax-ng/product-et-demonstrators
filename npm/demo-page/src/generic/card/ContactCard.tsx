@@ -12,12 +12,22 @@ class ContactCardComponent extends Component <{image_src: string, name: string, 
     render(): React.ReactNode {
         return  <div className="contact-card">
                     <img src={this.props.image_src}/>
+                    <div className="contact-card-info">
+                        <Typography variant="h4">{this.props.name}</Typography>
+                        <a href={"mailto:" + this.props.email}><Typography variant="body2">{this.props.email}</Typography></a>
+                    </div>
+                </div>
+    }
+}
+
+/*
+                <div className="contact-card">
+                    <img src={this.props.image_src}/>
                     <br />
                     <Typography variant="h4">{this.props.name}</Typography>
                     <a href={"mailto:" + this.props.email}><Typography variant="body2">{this.props.email}</Typography></a>
                 </div>
-    }
-}
+*/
 
 
 export default ContactCardComponent;

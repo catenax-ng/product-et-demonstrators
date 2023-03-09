@@ -1,5 +1,3 @@
-tbd
-
 
 ```contact_card
 ../md-content/images/contact-icons/david_contact.jpg

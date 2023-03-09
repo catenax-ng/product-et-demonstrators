@@ -82,9 +82,18 @@
   text-align: center;
 }
 
-
 .contact-card {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
 
+.contact-card-info {
+  float: left;
+  margin-left: 37px;
+}
+
+.contact-card h4 {
+  margin-top: 15px !important;
 }
 
 .contact-card img {
@@ -95,8 +104,73 @@
 
   background-repeat: no-repeat;
   background-position: center;
+
+  float: left;
 }
 
 .contact-card a {
   text-decoration: none;
+}
+
+pre {
+  overflow: auto;
+}
+
+
+
+  
+/* MOBILE */
+@media only screen and (max-width: 481px) {
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .css-429xfk {
+    overflow: hidden;
+    width: 40px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+
+  h1 {
+    font-size: 45px !important;
+  }
+
+  h2 {
+    font-size: 39px !important;
+  }
+
+  h3 {
+    font-size: 32px !important;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  .css-cskq03-MuiTypography-root {
+    height: 50px !important;
+  }
+
+  .contact-card img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .contact-card-info {
+    float: left;
+    margin-left: 15px;
+    width: 180px;
+  }
+
+  .about-cont {
+    width: 85%;
+  }
+  
+  .markdown-style img {
+    width: 95%;
+  }
 }
