@@ -116,6 +116,11 @@ pre {
   overflow: auto;
 }
 
+.demo-list {
+  max-width: 625px;
+  margin: auto;
+}
+
 
 
   
@@ -156,7 +161,7 @@ pre {
   }
 
   .contact-card img {
-    width: 85px;
+    width: 85px !important;
     height: 85px;
   }
 

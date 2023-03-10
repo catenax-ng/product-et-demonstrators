@@ -14,7 +14,7 @@ export const DemoList = ({
 
     return (
   
-      <ul style={style_list}>
+      <ul style={style_list} className='demo-list'>
   
         {cards.map((item, i) =>
           <li key={i}>{item}</li>
