@@ -29,7 +29,8 @@ function createCards(info: ICard[]): any[] {
           status={value.status}
           statusText={value.statusText}
           reference={value.reference}
-          label={value.label}
+          label=""
+
         ></Card>
       )
   }) 
@@ -84,6 +85,16 @@ class IndexApp extends React.Component{
 
         <Introduction />
 
+        <DemoList cards={this.cards}/>
+
+        <IntroContent />
+
+      </div>
+    )
+  }
+}
+
+/*
         <div style={{display: "table"}}>
           <div style={{display: "table-row"}}>
             <div style={{display: "table-cell", verticalAlign: "top"}}><IntroContent /></div>
@@ -91,12 +102,6 @@ class IndexApp extends React.Component{
             <div style={{width: "500px", display: "table-cell", verticalAlign: "top"}}><DemoList cards={this.cards}/></div>
           </div>
         </div>
-
-        
-
-      </div>
-    )
-  }
-}
+*/
 
 export default IndexApp;

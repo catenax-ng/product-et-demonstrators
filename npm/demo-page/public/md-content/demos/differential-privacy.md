@@ -37,7 +37,9 @@ Differential Privacy is widely applicable and has also been presented to obfusca
 
 
 ### Participant Roles
-*Data Provider*, *Data Consumer* and *Data Subject*.
+1. *Data Provider*: Entity or company owners of the data.
+1. *Data Consumer*: Entity or company with the intention of processing the data.
+1. *Data Subject*: Individual who is the source of the Personal Identifiable Information (PPI).
 
 ### Building Blocks
 The *data provider* configure and control the tool for the automatic application of techniques to the incoming data requests and the actual query result. 

@@ -15,7 +15,7 @@ class AboutApp extends React.Component{
   
       return (
         
-        <div className='container'>
+        <div className='container about-cont'>
           <MarkdownComponent contentUrl="/md-content/about.md"></MarkdownComponent>
         </div>
       )
