@@ -19,7 +19,7 @@ class CodeComponent extends Component <{inline: string, className: string, child
 
             var data: string[] = this.split_contact_info(this.props.children[0])
 
-            return <ContactCardComponent image_src={data[0]} name={data[1]} email={data[2]}/>
+            return <ContactCardComponent image_src={data[0]} name={data[1]} role={data[2]} email={data[3]}/>
         }
 
         else  {

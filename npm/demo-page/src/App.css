@@ -93,7 +93,15 @@
 }
 
 .contact-card h4 {
-  margin-top: 15px !important;
+  margin-top: 9px !important;
+  margin-bottom: 0 !important;
+  line-height: 19px;
+}
+
+.contact-card em {
+  color: #9b9b9b;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 15px;
 }
 
 .contact-card img {
