@@ -7,15 +7,15 @@ david.noack@catena-x.net
 ```
 
 ```contact_card
-../md-content/images/contact-icons/jorge_munnoz.jpeg
+https://avatars.githubusercontent.com/u/40457175?s=200
 Jorge Muñoz Aguado
 Developer
 jorge.munozaguado@dlr.de
 ```
 
 ```contact_card
-../md-content/images/contact-icons/Robin_Taba.jpg
-Robin Taba
+../md-content/images/contact-icons/felix_hanke.jpg
+Felix Hanke
 Product Owner
-robin.taba@dlr.de
+felix.hanke@dlr.de
 ```
